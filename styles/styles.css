@@ -1,5 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@600;700&display=swap');
 
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILOS GENERALES*/
 body{
     margin: 0;
     background-color: #f2f2f2;
@@ -7,71 +15,79 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+/*HEADER Y NAV*/
 header{
     background-color: #15151E;
     color: #FFFFFF;
-    padding: 20px 40px;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul{
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    gap: 25px;
+    align-items: center;
+    gap: 35px;
 }
 
 nav a {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: 500;
+    font-size: 24px;
 }
 
 nav a :hover {
     color: #E10600;
 }   
 
-header > p {
-    margin: 0 0 15px 0;
+.nombre-sitio {
+    margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: 700;
     color: #E10600;
 }
 
+/*SECCIONES*/
 main {
-    padding: 40px;
+    padding: 50px 60px;
 }
 h1{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 700;
-    margin-bottom: 20px;
 }
 h2{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 28px;
+    font-size: 34px;
     font-weight: 600;
     color: #E10600;
-    margin-top: 35px;
-    margin-bottom: 15px;
 }
 h3{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 600;
-    margin-bottom: 8px;
 }
 p{
-    font-size: 17px;
+    font-size: 22px;
     line-height: 1.6;
+}
+li{
+    font-size: 22px;
+    line-height: 1.5;
 }
 
 section{
     background-color: #FFFFFF;
-    padding: 25px;
+    padding: 30px;
     margin-bottom: 25px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 section h1,
@@ -79,10 +95,11 @@ section h2{
     margin-top: 0;
 }       
 
-section p:last-child{
+section p:last-child {
     margin-bottom: 0;
 }
 
+/*IMAGENES*/
 figure{
     margin: 0;
     text-align: center;
@@ -100,6 +117,8 @@ figcaption{
     color: #555555;
 }
 
+/*FOOTER*/
+
 footer{
     background-color: #15151E;
     color: #FFFFFF;
@@ -116,4 +135,53 @@ footer a{
     text-decoration: none;
     font-weight: 500;
     margin: 0 10px;
+}
+
+.logo {
+    width: 260px;
+    height: auto;
+    display: block;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p,
+    li {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    figure img {
+        max-width: 100%;
+        height: auto;
+    }
 }
