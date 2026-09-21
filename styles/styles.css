@@ -19,24 +19,27 @@ body{
 header{
     background-color: #15151E;
     color: #FFFFFF;
-    padding: 30px 60px;
+    padding: 25px 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
 }
 
 nav ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 20px;
 }
 
 nav a {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 nav a :hover {
@@ -46,23 +49,23 @@ nav a :hover {
 .nombre-sitio {
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
     color: #E10600;
 }
 
 /*SECCIONES*/
 main {
-    padding: 50px 60px;
+    padding: 25px 15px;
 }
 h1{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 700;
 }
 h2{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 34px;
+    font-size: 28px;
     font-weight: 600;
     color: #E10600;
 }
@@ -71,18 +74,15 @@ h3{
     font-size: 26px;
     font-weight: 600;
 }
-p{
-    font-size: 22px;
-    line-height: 1.6;
-}
+p,
 li{
-    font-size: 22px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 section{
     background-color: #FFFFFF;
-    padding: 30px;
+    padding: 25px 20px;
     margin-bottom: 25px;
     border-radius: 8px;
     display: flex;
@@ -143,45 +143,79 @@ footer a{
     display: block;
 }
 
-/* RESPONSIVE */
+.grid-explora {
+display: grid;
+grid-template-columns:1fr;
+grid-template-areas:
+    "pilotos"
+    "escuderias"
+    "circuitos"
+    "historia";
+gap: 20px;
 
-@media (max-width: 768px) {
+}
 
-    header {
-        flex-direction: column;
-        gap: 20px;
-        padding: 25px 20px;
+.area-pilotos {
+    grid-area: pilotos;
+}
+.area-escuderias {
+    grid-area: escuderias;
+}
+.area-circuitos {
+    grid-area: circuitos;
+}
+.area-historia {
+    grid-area: historia;
+}
+
+/*GRID PILOTOS*/
+.grid-pilotos {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-areas:
+        "titulo"
+        "hamilton"
+        "verstappen"
+        "alonso"
+        "colapinto";
+   gap: 20px;
+}
+
+.grid-pilotos h2 {
+    grid-area: titulo;
+}
+
+.hamilton {
+    grid-area: hamilton;
+}
+
+.verstappen {
+    grid-area: verstappen;
+}
+
+.alonso {
+    grid-area: alonso;
+}
+
+.colapinto {
+    grid-area: colapinto;
+}
+
+/*DESKTOP*/
+@media (min-width: 1024px) {
+    .grid-explora {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "pilotos escuderias"
+            "circuitos historia";
     }
 
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    main {
-        padding: 25px 15px;
-    }
-
-    h1 {
-        font-size: 38px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    p,
-    li {
-        font-size: 18px;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    figure img {
-        max-width: 100%;
-        height: auto;
+    .grid-pilotos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "titulo titulo"
+            "hamilton verstappen"
+            "alonso colapinto";
     }
 }
+
