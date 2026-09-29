@@ -4,21 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escuderías | Mundo Fórmula 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">  
 </head>
 <body>
     <header>
-        <p>Mundo Fórmula 1</p>
+        <img class="logo" src="../imgF1/logos.png.png" alt="Logo de Mundo Fórmula 1">
+        <h1 class="nombre-sitio">Mundo Fórmula 1</h1>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+    <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuF1"
+        aria-controls="menuF1"
+        aria-expanded="false"
+        aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuF1">
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pilotos.html">Pilotos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="escuderias.html">Escuderías</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="circuitos.html">Circuitos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="historia.html">Historia</a>
+            </li>
+
+        </ul>
+    </div>
+
+</nav>
         
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="pilotos.html">Pilotos</a></li>
-                <li><a href="escuderias.html">Escuderías</a></li>
-                <li><a href="circuitos.html">Circuitos</a></li>
-                <li><a href="historia.html">Historia</a></li>
-            </ul>
-        </nav>  
     </header>
 
     <main>
@@ -59,7 +87,7 @@
             <h2>Los equipos de Fórmula 1</h2>
 
             <figure>
-                <img src="../imgF1/escu.jpg" alt="Escuderías de la Fórmula 1" width="600" height="400">
+                <img src="../imgF1/escuderias.png" alt="Escuderías de la Fórmula 1" width="900" height="900">
                 <figcaption>Escuderías de la Fórmula 1</figcaption> 
             </figure>
         </section>
@@ -76,5 +104,6 @@
 
         </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

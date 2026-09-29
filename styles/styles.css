@@ -8,13 +8,21 @@
 }
 
 /* ESTILOS GENERALES*/
-body{
+body {
     margin: 0;
     background-color: #f2f2f2;
     color: #15151E;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
 /*HEADER Y NAV*/
 header{
     background-color: #15151E;
@@ -24,6 +32,10 @@ header{
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    
+    background-image: linear-gradient(rgba(21, 21, 30, 0.65), rgba(21, 21, 30, 0.65)), url("../imgF1/fondo.png");
+    background-size: cover;
+    background-position: center;
 }
 
 nav ul{
@@ -38,13 +50,24 @@ nav ul{
 nav a {
     color: #FFFFFF;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 20px;
+    transition: color 0.3s ease;
 }
 
-nav a :hover {
+
+nav a:hover {
     color: #E10600;
 }   
+
+.navbar .nav-link:focus {
+    color: #E10600;
+    outline: 2px solid #E10600;
+}
+.navbar .nav-link:active {
+    color: #FFFFFF;
+    background-color: #E10600;
+}
 
 .nombre-sitio {
     margin: 0;
@@ -217,5 +240,53 @@ gap: 20px;
             "hamilton verstappen"
             "alonso colapinto";
     }
+
+    header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    
+    }
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #15151E;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.carousel {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 0.7;
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    outline: 2px solid #E10600;
+}
+
+.carousel-control-prev:active,
+.carousel-control-next:active {
+    opacity: 0.5;
+}
+.navbar .nav-link {
+    color: #FFFFFF;
+}

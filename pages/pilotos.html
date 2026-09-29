@@ -5,23 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pilotos | Mundo Fórmula 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
 
     <header>
-        <p>Mundo Fórmula 1</p>
+        <img class="logo" src="../imgF1/logos.png.png" alt="Logo de Mundo Fórmula 1">
+        <h1 class="nombre-sitio">Mundo Fórmula 1</h1>
         
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="pilotos.html">Pilotos</a></li>
-                <li><a href="escuderias.html">Escuderías</a></li>
-                <li><a href="circuitos.html">Circuitos</a></li>
-                <li><a href="historia.html">Historia</a></li>
-            </ul>
-        </nav>
-    
+<nav class="navbar navbar-expand-lg navbar-dark">
+
+    <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuF1"
+        aria-controls="menuF1"
+        aria-expanded="false"
+        aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuF1">
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="pilotos.html">Pilotos</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="escuderias.html">Escuderías</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="circuitos.html">Circuitos</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="historia.html">Historia</a>
+            </li>
+
+        </ul>
+    </div>
+
+</nav>
     </header>
 
     <main>
@@ -37,28 +67,36 @@
        
         </section>
 
-        <section>
+        <section class="grid-pilotos">
             
             <h2>Lista de Pilotos</h2>
 
-            <article>
-                <h3>Lewis Hamilton</h3>
-                <p>Piloto británico con más títulos mundiales en la historia de la Fórmula 1.</p>
+            <article class ="hamilton card">
+                <div class="card-body">
+                    <h3>Lewis Hamilton</h3>
+                    <p>Piloto británico con más títulos mundiales en la historia de la Fórmula 1.</p>
+                </div>
             </article>
 
-            <article>
-                <h3>Max Verstappen</h3>
-                <p>Piloto neerlandés conocido por su estilo de conducción agresivo.</p>
+            <article class="verstappen card">
+                <div class="card-body">
+                    <h3>Max Verstappen</h3>
+                    <p>Piloto neerlandés conocido por su estilo de conducción agresivo.</p>
+                </div>
             </article>
 
-            <article>
-                <h3>Fernando Alonso</h3>
-                <p>Piloto español, bicampeón del mundo y uno de los más experimentados en la parrilla.</p>  
+            <article class="alonso card">
+                <div class="card-body">
+                    <h3>Fernando Alonso</h3>
+                    <p>Piloto español, bicampeón del mundo y uno de los más experimentados en la parrilla.</p>
+                </div>
             </article>
 
-            <article>
-                <h3>Franco Colapinto</h3>
-                <p>Piloto argentino, joven promesa de la Fórmula 1.</p>
+            <article class="colapinto card">
+                <div class="card-body">
+                    <h3>Franco Colapinto</h3>
+                    <p>Piloto argentino, joven promesa de la Fórmula 1.</p>
+                </div>
             </article>
 
         </section>
@@ -68,7 +106,7 @@
 
             <figure>
                 
-                <img src="../imgF1/pilotoss.jpg"alt="Pilotos de Fórmula 1" width="400">
+                <img src="../imgF1/pilotos.png"alt="Pilotos de Fórmula 1" width="900">
                 <figcaption>Algunos de los pilotos más destacados de la Fórmula 1</figcaption>  
             
             </figure>
@@ -88,5 +126,7 @@
         </p>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
