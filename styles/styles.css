@@ -83,7 +83,7 @@ main {
 }
 h1{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 700;
 }
 h2{
@@ -224,6 +224,13 @@ gap: 20px;
     grid-area: colapinto;
 }
 
+/*GRID ESCUDERIAS*/
+.grid-escuderias {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
 /*DESKTOP*/
 @media (min-width: 1024px) {
     .grid-explora {
@@ -247,6 +254,10 @@ gap: 20px;
     align-items: center;
     padding: 30px 60px;
     
+    }
+
+    .grid-escuderias {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
