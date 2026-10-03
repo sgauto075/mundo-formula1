@@ -231,6 +231,15 @@ gap: 20px;
     gap: 20px;
 }
 
+.grid-pilotos .card{
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+}
+.grid-pilotos .card-body{
+    padding: 15px;
+}
+
 /*DESKTOP*/
 @media (min-width: 1024px) {
     .grid-explora {
