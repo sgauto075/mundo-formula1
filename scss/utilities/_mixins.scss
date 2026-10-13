@@ -1,0 +1,5 @@
+@mixin grid-responsive($columns: 1fr, $espacio: 20px) {
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $espacio;
+}

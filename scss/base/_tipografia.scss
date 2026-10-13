@@ -1,0 +1,33 @@
+@use "../utilities/variables" as *;
+
+// Fuente de Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@600;700&display=swap');
+
+// Título principal
+h1 {
+    font-family: $fuente-titulos;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+// Títulos secundarios
+h2 {
+    font-family: $fuente-titulos;
+    font-size: 28px;
+    font-weight: 600;
+    color: $color-primario;
+}
+
+// Subtítulos
+h3 {
+    font-family: $fuente-titulos;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+// Párrafos y listas
+p,
+li {
+    font-size: 18px;
+    line-height: 1.6;
+}

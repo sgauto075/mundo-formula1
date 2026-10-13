@@ -1,0 +1,97 @@
+@use "../utilities/variables" as*;
+@use "../utilities/mixins" as *;
+//grid pilotos//
+.grid-pilotos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "titulo"
+        "hamilton"
+        "verstappen"
+        "alonso"
+        "colapinto";
+    gap:$espaciado-grid;
+
+    h2{
+        grid-area:titulo;
+    }
+    .card {
+        width: 100%;
+        border: none;
+        border-radius: $radio-borde;
+    }
+
+    .card-body{
+        padding:15px;
+    }
+
+    @media (min-width: $ancho-desktop){
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "titulo titulo"
+            "hamilton verstappen"
+            "alonso colapinto";
+
+    }
+}
+
+//ubicacion pilotos//
+.hamilton{
+    grid-area:hamilton;
+}
+.verstappen{
+    grid-area:verstappen;
+}
+.alonso{
+    grid-area:alonso;
+}
+.colapinto{
+    grid-area:colapinto;
+}
+
+//grid escuderias//
+.grid-escuderias{
+   @include grid-responsive(1fr, $espaciado-grid);
+    @media (min-width: $ancho-desktop){
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+//tarjeta pagina principal//
+
+.grid-explora{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "pilotos"
+        "escuderias"
+        "circuitos"
+        "historia";
+    gap:$espaciado-grid;
+
+    @media (min-width: $ancho-desktop){
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "pilotos escuderias"
+            "circuitos historia";
+    }
+}
+
+.area-pilotos{
+    grid-area:pilotos;
+}
+.area-escuderias{
+    grid-area:escuderias;
+}
+.area-circuitos{
+    grid-area:circuitos;
+}
+.area-historia{
+    grid-area:historia;
+}
+
+.seccion-explora {
+    h2 {
+        font-size: 25px;
+    }
+}

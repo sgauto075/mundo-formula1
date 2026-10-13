@@ -1,0 +1,67 @@
+@use "../utilities/variables" as *;
+
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// Estilos generales
+body {
+    margin: 0;
+    background-color: $color-claro;
+    color: $color-oscuro;
+    font-family: $fuente-principal;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+// Contenido principal
+main {
+    padding: 25px 15px;
+}
+
+// Secciones
+section {
+    background-color: $color-blanco;
+    padding: 25px 20px;
+    margin-bottom: 25px;
+    border-radius: $radio-borde;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h1,
+    h2 {
+        margin-top: 0;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// Imágenes
+figure {
+    margin: 0;
+    text-align: center;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: $radio-borde;
+    }
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: $color-gris;
+}

@@ -1,0 +1,42 @@
+@use "../utilities/variables" as*;
+
+//navegación//
+nav{
+    ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    a{
+        color: $color-blanco;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;
+        transition: color 0.3s ease;
+
+        &:hover{
+            color: $color-primario;
+        }
+    }
+}
+
+//personalizacion bootstrap//
+.navbar{
+    .nav-link{
+        color:$color-blanco;
+
+        &:focus{
+            color:$color-primario;
+            outline: 2px solid $color-primario;
+        }
+
+        &:active {
+            color: $color-blanco;
+            background-color: $color-primario;
+        }
+    }
+}

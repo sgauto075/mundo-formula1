@@ -1,0 +1,43 @@
+@use "../utilities/variables" as *;
+
+// Encabezado
+header {
+    background-color: $color-oscuro;
+    color: $color-blanco;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            rgba(21, 21, 30, 0.65),
+            rgba(21, 21, 30, 0.65)
+        ),
+        url("../imgF1/fondo.png");
+
+    background-size: cover;
+    background-position: center;
+
+    @media (min-width: $ancho-desktop) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 60px;
+    }
+}
+
+.nombre-sitio {
+    margin: 0;
+    font-family: $fuente-titulos;
+    font-size: 32px;
+    font-weight: 700;
+    color: $color-primario;
+}
+
+.logo {
+    width: 260px;
+    height: auto;
+    display: block;
+}
