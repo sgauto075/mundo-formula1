@@ -24,6 +24,14 @@
     .card-body{
         padding:15px;
     }
+   
+    @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "titulo titulo"
+        "hamilton verstappen"
+        "alonso colapinto";
+    }
 
     @media (min-width: $ancho-desktop){
         grid-template-columns: 1fr 1fr;
@@ -52,6 +60,9 @@
 //grid escuderias//
 .grid-escuderias{
    @include grid-responsive(1fr, $espaciado-grid);
+   @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    }
     @media (min-width: $ancho-desktop){
         grid-template-columns: 1fr 1fr;
     }
@@ -68,6 +79,14 @@
         "circuitos"
         "historia";
     gap:$espaciado-grid;
+    
+    @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    gap: $espaciado-tablet;
+    grid-template-areas:
+        "pilotos escuderias"
+        "circuitos historia";
+    }
 
     @media (min-width: $ancho-desktop){
         grid-template-columns: 1fr 1fr;

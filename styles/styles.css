@@ -51,9 +51,7 @@ main {
 
 section {
   background-color: #FFFFFF;
-  padding: 25px 20px;
   margin-bottom: 25px;
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -82,6 +80,11 @@ figcaption {
   color: #555555;
 }
 
+section {
+  border-radius: 8px;
+  padding: 25px 20px;
+}
+
 header {
   background-color: #15151E;
   color: #FFFFFF;
@@ -94,10 +97,16 @@ header {
   background-size: cover;
   background-position: center;
 }
+@media (min-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
 @media (min-width: 1024px) {
   header {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 30px 60px;
   }
@@ -163,6 +172,12 @@ nav a:hover {
   color: #FFFFFF;
   background-color: #E10600;
 }
+.navbar .nav-link {
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: #E10600;
+}
 
 .grid-pilotos {
   display: grid;
@@ -180,6 +195,12 @@ nav a:hover {
 }
 .grid-pilotos .card-body {
   padding: 15px;
+}
+@media (min-width: 768px) {
+  .grid-pilotos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo titulo" "hamilton verstappen" "alonso colapinto";
+  }
 }
 @media (min-width: 1024px) {
   .grid-pilotos {
@@ -209,6 +230,11 @@ nav a:hover {
   grid-template-columns: 1fr;
   gap: 20px;
 }
+@media (min-width: 768px) {
+  .grid-escuderias {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media (min-width: 1024px) {
   .grid-escuderias {
     grid-template-columns: 1fr 1fr;
@@ -220,6 +246,13 @@ nav a:hover {
   grid-template-columns: 1fr;
   grid-template-areas: "pilotos" "escuderias" "circuitos" "historia";
   gap: 20px;
+}
+@media (min-width: 768px) {
+  .grid-explora {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    grid-template-areas: "pilotos escuderias" "circuitos historia";
+  }
 }
 @media (min-width: 1024px) {
   .grid-explora {

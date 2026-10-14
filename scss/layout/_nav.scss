@@ -38,5 +38,11 @@ nav{
             color: $color-blanco;
             background-color: $color-primario;
         }
+
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $color-primario;
+        }
     }
 }

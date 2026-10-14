@@ -31,9 +31,7 @@ main {
 // Secciones
 section {
     background-color: $color-blanco;
-    padding: 25px 20px;
     margin-bottom: 25px;
-    border-radius: $radio-borde;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -46,6 +44,8 @@ section {
     p:last-child {
         margin-bottom: 0;
     }
+
+    @extend %estilo-seccion;
 }
 
 // Imágenes
@@ -64,4 +64,9 @@ figcaption {
     margin-top: 8px;
     font-size: 14px;
     color: $color-gris;
+}
+
+%estilo-seccion {
+    border-radius: $radio-borde;
+    padding: 25px 20px;
 }
