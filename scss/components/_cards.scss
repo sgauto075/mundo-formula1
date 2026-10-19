@@ -66,6 +66,10 @@
     @media (min-width: $ancho-desktop){
         grid-template-columns: 1fr 1fr;
     }
+
+    h2{
+        grid-column: 1 / -1;
+    }
 }
 
 //tarjeta pagina principal//
@@ -112,5 +116,85 @@
 .seccion-explora {
     h2 {
         font-size: 25px;
+    }
+}
+
+//Animamacion nativa de tarjetas//
+@keyframes aparecerTarjeta {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.grid-pilotos .card{
+    animation: aparecerTarjeta 0.6s ease-out backwards;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+
+//Elevacion Escuderias//
+.grid-escuderias article {
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+//Grid de circuitos//
+.grid-circuitos{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $espaciado-grid;
+
+    h2{
+        grid-column: 1 / -1;
+    }
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+}
+
+//Elevacion circuitos//
+.grid-circuitos article {
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+//Grid de historia//
+.grid-historia{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: $espaciado-grid;
+
+    h2{
+        grid-column: 1 / -1;
+    }
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+//Elevacion historia//
+.grid-historia article {
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
     }
 }

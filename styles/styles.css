@@ -27,6 +27,7 @@ li {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -240,6 +241,9 @@ nav a:hover {
     grid-template-columns: 1fr 1fr;
   }
 }
+.grid-escuderias h2 {
+  grid-column: 1/-1;
+}
 
 .grid-explora {
   display: grid;
@@ -279,6 +283,73 @@ nav a:hover {
 
 .seccion-explora h2 {
   font-size: 25px;
+}
+
+@keyframes aparecerTarjeta {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.grid-pilotos .card {
+  animation: aparecerTarjeta 0.6s ease-out backwards;
+  transition: transform 0.3s ease;
+}
+.grid-pilotos .card:hover {
+  transform: translateY(-5px);
+}
+
+.grid-escuderias article {
+  transition: transform 0.3s ease;
+}
+.grid-escuderias article:hover {
+  transform: translateY(-5px);
+}
+
+.grid-circuitos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.grid-circuitos h2 {
+  grid-column: 1/-1;
+}
+@media (min-width: 768px) {
+  .grid-circuitos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.grid-circuitos article {
+  transition: transform 0.3s ease;
+}
+.grid-circuitos article:hover {
+  transform: translateY(-5px);
+}
+
+.grid-historia {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.grid-historia h2 {
+  grid-column: 1/-1;
+}
+@media (min-width: 768px) {
+  .grid-historia {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.grid-historia article {
+  transition: transform 0.3s ease;
+}
+.grid-historia article:hover {
+  transform: translateY(-5px);
 }
 
 .carousel {
