@@ -1,0 +1,13 @@
+[35mindex.html[m[36m:[m[32m15[m[36m:[m        <img class="logo" src="[1;31mimgF1/[mlogo-mundo-formula-1.png" alt="Logo de Mundo Fórmula 1" width="100" height="100">
+[35mindex.html[m[36m:[m[32m93[m[36m:[m                    <img src="[1;31mimgF1/[mlargada-formula-1.jpg" class="d-block w-100" alt="Monoplazas de Fórmula 1 alineados en la parrilla de salida de una carrera">
+[35mindex.html[m[36m:[m[32m97[m[36m:[m                    <img src="[1;31mimgF1/[mcircuito-formula-1.png" class="d-block w-100" alt="Circuito de Fórmula 1 con sus diferentes curvas y rectas, mostrando la complejidad del trazado">
+[35mpages/circuitos.html[m[36m:[m[32m17[m[36m:[m        <img class="logo" src="../[1;31mimgF1/[mlogo-mundo-formula-1.png" alt="Logo de Mundo Fórmula 1">
+[35mpages/circuitos.html[m[36m:[m[32m99[m[36m:[m                <img src="../[1;31mimgF1/[mcircuito-formula-1.png" alt="Imagen con los trazados de diferentes circuitos del calendario de Fórmula 1" width="900">
+[35mpages/escuderias.html[m[36m:[m[32m14[m[36m:[m        <img class="logo" src="../[1;31mimgF1/[mlogo-mundo-formula-1.png" alt="Logo de Mundo Fórmula 1">
+[35mpages/escuderias.html[m[36m:[m[32m92[m[36m:[m                <img src="../[1;31mimgF1/[mescuderias-equipos-formula-1.png" alt="Monoplazas y logotipos de diferentes escuderías de Fórmula 1, como Ferrari, Mercedes, Red Bull y McLaren" width="900">
+[35mpages/historia.html[m[36m:[m[32m16[m[36m:[m        <img class="logo" src="../[1;31mimgF1/[mlogo-mundo-formula-1.png" alt="Logo de Mundo Fórmula 1">
+[35mpages/historia.html[m[36m:[m[32m99[m[36m:[m                <img src="../[1;31mimgF1/[mhistoria.png" alt="Evolución histórica de la Fórmula 1, con monoplazas antiguos y modernos en el circuito de Mónaco" width="900">
+[35mpages/pilotos.html[m[36m:[m[32m16[m[36m:[m        <img class="logo" src="../[1;31mimgF1/[mlogo-mundo-formula-1.png" alt="Logo de Mundo Fórmula 1">
+[35mpages/pilotos.html[m[36m:[m[32m109[m[36m:[m                <img src="../[1;31mimgF1/[mpilotos-destacados-formula-1.png" alt="Lewis Hamilton, Max Verstappen, Fernando Alonso y Franco Colapinto con sus trajes de competición de Fórmula 1" width="900">
+[35mscss/layout/_header.scss[m[36m:[m[32m18[m[36m:[m        url("../[1;31mimgF1/[mfondo.png");
+[35mstyles/styles.css[m[36m:[m[32m97[m[36m:[m  background-image: linear-gradient(rgba(21, 21, 30, 0.85), rgba(21, 21, 30, 0.85)), url("../[1;31mimgF1/[mfondo.png");
